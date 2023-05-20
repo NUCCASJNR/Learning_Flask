@@ -1,0 +1,14 @@
+<!-- template.html -->
+<html>
+<head>
+    <title>Data from MySQL Database</title>
+</head>
+<body>
+    <h1>Data from MySQL Database</h1>
+    <ul>
+        {% for item in data %}
+	<li>{{ item.name }} is {{ item.age }} old id is {{ item.id}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
